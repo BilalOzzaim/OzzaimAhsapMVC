@@ -1,0 +1,33 @@
+﻿.sidebar-link {
+    display: flex !important;
+    column-gap: 10px;
+}
+
+.btn.btn-info.btn-sm i {
+    margin-right: 20px;
+}
+
+.btn.btn-danger.btn-sm i {
+    margin-right: 15px;
+}
+
+.users-add a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #17a2b8;
+    color: white;
+    width: 155px;
+}
+
+.users-add box-icon {
+    margin-right: 15px;
+}
+
+.centerbox {
+    min-height: 236.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}

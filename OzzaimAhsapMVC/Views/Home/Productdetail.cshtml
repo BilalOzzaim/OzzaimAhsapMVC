@@ -1,0 +1,22 @@
+﻿@model OzzaimAhsapMVC.Models.Products
+@{
+    ViewData["Title"] = "Productdetail";
+}
+<div class="service_container"  >
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <img class="card-img-top" style="height:280px" ; src="@Model.imageurl" alt="Card image cap">
+            </div>
+        </div>
+        <div class="col-md-6">
+                <h1 class=""><i>@Model.title<i</></h1>
+                <p class="">@Model.desciription</p>
+            <div class="">
+                <h4 class="">Fiyat <span style="color:#f7c17b">$</span> <span style="color:#325662">@Model.price</span></h4>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,48 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model OzzaimAhsapMVC.Models.Products
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/Admin/_AdminLayout.cshtml";
+}
+<div class="content-wrapper " style="min-height: 236.4px;">
+
+    <h1>Oluştur</h1>
+
+    <h4>ÜRÜNLER</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form action="/Admin/Products/Create" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="imageurl" class="control-label"></label>
+                    <input asp-for="imageurl" class="form-control" />
+                    <span asp-validation-for="imageurl" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="title" class="control-label"></label>
+                    <input asp-for="title" class="form-control" />
+                    <span asp-validation-for="title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="desciription" class="control-label"></label>
+                    <input asp-for="desciription" class="form-control" />
+                    <span asp-validation-for="desciription" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="price" class="control-label"></label>
+                    <input type="number" asp-for="price" class="form-control" />
+                    <span asp-validation-for="price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a href="/Admin/Products/Index/" class="btn btn-primary">Listeye Geri Dön</a>
+    </div>
+
+</div>

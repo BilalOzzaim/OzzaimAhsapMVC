@@ -1,0 +1,538 @@
+﻿@model IEnumerable<OzzaimAhsapMVC.Models.Products>
+@{
+    ViewBag.Title = "Index";
+}
+<section class="slider_section ">
+    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="detail-box">
+                                <h1>
+                                    ÖZZAİM AHŞAP <br>
+                                    HİZMETLER
+                                </h1>
+                                <div class="btn-box">
+                                    <a href="/Home/Contact" class="btn1">
+                                        İletişim
+                                    </a>
+                                    <a href="/Home/About" class="btn2">
+                                        Hakkımızda
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="detail-box">
+                                <h1>
+                                    ÖZZAİM AHŞAP <br>
+                                    HİZMETLER
+                                </h1>
+                                <div class="btn-box">
+                                    <a href="/Home/Contact" class="btn1">
+                                        İletişim
+                                    </a>
+                                    <a href="/Home/About" class="btn2">
+                                        Hakkımızda
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="detail-box">
+                                <h1>
+                                    ÖZZAİM AHŞAP <br>
+                                    HİZMETLER
+                                </h1>
+                                <div class="btn-box">
+                                    <a href="/Home/Contact" class="btn1">
+                                        İletişim
+                                    </a>
+                                    <a href="/Home/About" class="btn2">
+                                        Hakkımızda
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="detail-box">
+                                <h1>
+                                    ÖZZAİM AHŞAP <br>
+                                    HİZMETLER
+                                </h1>
+                                <div class="btn-box">
+                                    <a href="/Home/Contact" class="btn1">
+                                        İletişim
+                                    </a>
+                                    <a href="/Home/About" class="btn2">
+                                        Hakkımızda
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="detail-box">
+                                <h1>
+                                    ÖZZAİM AHŞAP <br>
+                                    HİZMETLER
+                                </h1>
+                                <div class="btn-box">
+                                    <a href="/Home/Contact" class="btn1">
+                                        İletişim
+                                    </a>
+                                    <a href="/Home/About" class="btn2">
+                                        Hakkımızda
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+            <li data-target="#customCarousel1" data-slide-to="3"></li>
+            <li data-target="#customCarousel1" data-slide-to="4"></li>
+        </ol>
+    </div>
+</section>
+<section class="service_section layout_padding">
+    <div class="service_container">
+        <div class="container ">
+            <div class="heading_container">
+                <h2 style="margin:25px;">
+                    Ürünler
+                </h2>
+                <br />
+            </div>
+            <div class="row">
+
+                @foreach (var item in Model)
+                {
+                      <div class="col-md-6 col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" style="he ight:280px" ; src="@item.imageurl" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.title</h5>
+                                <p class="card-text">@item.desciription</p>
+                                <br />
+                                <p class="card-text"> @item.price </p>
+                                <a href="~/Home/Productdetail/@item.Id" class="btn btn-primary" style="background-color: #f07b26; border: 1px solid #f07b26;">Daha fazla</a>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            Hakkımızda
+                        </h2>
+                    </div>
+                    <p>
+                        Karadeniz'in sert iklimine meydan okuyan bir aile geleneği olan Özzaim Ahşap, Hüseyin Özzaim'in tutkusu ve azmiyle Arhavi'nin küçük bir köyünde doğdu. Bu şirket, ahşabın doğallığını modern yaşamla buluşturarak Karadeniz'in ruhunu her parçasında yansıtıyor. Güçlü ve dayanıklı bir miras olarak, her parça bir öykünün ve ailenin birlikte yazdığı destansı bir serüvenin parçasıdır.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="img-box">
+                    <img src="~/images/Artvin.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="project_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Projeler
+            </h2>
+        </div>
+        <div class="carousel-wrap ">
+            <div class="filter_box">
+                <h6>
+                    KATEGORİ FİLTRESİ
+                </h6>
+                <nav class="owl-filter-bar">
+                    <a href="#" class="item active" data-owl-filter="*">TÜMü </a>
+                    <a href="#" class="item" data-owl-filter=".painting">TABLO </a>
+                    <a href="#" class="item" data-owl-filter=".reconstruction">
+                        YENİDEN YAPILANMA
+                    </a>
+                    <a href="#" class="item" data-owl-filter=".repair">ONARIMLAR </a>
+                    <a href="#" class="item" data-owl-filter=".residential">YERLEŞİM </a>
+                    <a href="#" class="item" data-owl-filter=".styling">STİL </a>
+                </nav>
+            </div>
+
+            <div class="owl-carousel project_carousel">
+                <div class="item painting">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="~/images/IMG-20240505-WA0051.jpg" alt="" />
+                            <a href="" class="pin_link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                iç işler
+                            </h5>
+                            <p>
+                                enjekte edilen mizahla veya biraz bile görünmeyen rastgele sözcüklerle bir biçimde değişiklik
+                                inandırıcı. Eğer kullanacaksan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item reconstruction">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="~/images/IMG-20240505-WA0055.jpg" alt="" />
+                            <a href="" class="pin_link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                iç işler
+                            </h5>
+                            <p>
+                                enjekte edilen mizahla veya biraz bile görünmeyen rastgele sözcüklerle bir biçimde değişiklik
+                                inandırıcı. Eğer kullanacaksan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item repair">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="~/images/IMG-20240505-WA0060.jpg" alt="" />
+                            <a href="" class="pin_link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                iç işler
+                            </h5>
+                            <p>
+                                enjekte edilen mizahla veya biraz bile görünmeyen rastgele sözcüklerle bir biçimde değişiklik
+                                inandırıcı. Eğer kullanacaksan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item residential">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="~/images/IMG-20240505-WA0068.jpg" alt="" />
+                            <a href="" class="pin_link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                İç işler
+                            </h5>
+                            <p>
+                                enjekte edilen mizahla veya biraz bile görünmeyen rastgele sözcüklerle bir biçimde değişiklik
+                                inandırıcı. Eğer kullanacaksan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item styling">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="~/images/IMG-20240505-WA0067.jpg" alt="" />
+                            <a href="" class="pin_link">
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                İç işler
+                            </h5>
+                            <p>
+                                enjekte edilen mizahla veya biraz bile görünmeyen rastgele sözcüklerle bir biçimde değişiklik
+                                inandırıcı. Eğer kullanacaksan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="client_section layout_padding">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                Referans
+            </h2>
+        </div>
+    </div>
+    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="~/images/client.jpg" alt="">
+                                </div>
+                                <div class="detail-box">
+                                    <div class="client_info">
+                                        <div class="client_name">
+                                            <h5>
+                                                Yusuf
+                                            </h5>
+                                            <h6>
+                                                Kafaf
+                                            </h6>
+                                        </div>
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                    </div>
+                                    <p>
+
+                                        Elbette, işte bir ahşap sitesine yazabileceğiniz güzel bir yorum örneği:
+
+                                        Ahşap işçiliğine ve doğal malzemelere olan tutkunuzun bir yansıması olan bu siteye hayran kaldım! Ürünlerinizin her biri zarif tasarımları ve kaliteli işçilikleri ile öne çıkıyor. Ahşap dokusunun doğallığı ve sıcaklığı, mekanlara benzersiz bir hava katıyor. Sitenizden alışveriş yapmak gerçek bir zevk, çünkü her detay büyük bir özenle düşünülmüş. Müşteri memnuniyetine verdiğiniz önemi hissettirmek adına sunduğunuz detaylı ürün açıklamaları ve görseller, alışveriş deneyimini daha da keyifli hale getiriyor. Doğal ve estetik yaşam alanları oluşturmak isteyen herkese bu siteyi gönül rahatlığıyla tavsiye ederim. Harika işlerinize devam edin!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="~/images/client.jpg" alt="">
+                                </div>
+                                <div class="detail-box">
+                                    <div class="client_info">
+                                        <div class="client_name">
+                                            <h5>
+                                                Çağdaç
+                                            </h5>
+                                            <h6>
+                                                Kocaman
+                                            </h6>
+                                        </div>
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                    </div>
+                                    <p>
+
+                                        Elbette, işte bir ahşap sitesine yazabileceğiniz güzel bir yorum örneği:
+
+                                        Ahşap işçiliğine ve doğal malzemelere olan tutkunuzun bir yansıması olan bu siteye hayran kaldım! Ürünlerinizin her biri zarif tasarımları ve kaliteli işçilikleri ile öne çıkıyor. Ahşap dokusunun doğallığı ve sıcaklığı, mekanlara benzersiz bir hava katıyor. Sitenizden alışveriş yapmak gerçek bir zevk, çünkü her detay büyük bir özenle düşünülmüş. Müşteri memnuniyetine verdiğiniz önemi hissettirmek adına sunduğunuz detaylı ürün açıklamaları ve görseller, alışveriş deneyimini daha da keyifli hale getiriyor. Doğal ve estetik yaşam alanları oluşturmak isteyen herkese bu siteyi gönül rahatlığıyla tavsiye ederim. Harika işlerinize devam edin!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <div class="box">
+                                <div class="img-box">
+                                    <img src="~/images/client.jpg" alt="">
+                                </div>
+                                <div class="detail-box">
+                                    <div class="client_info">
+                                        <div class="client_name">
+                                            <h5>
+                                                Halil
+                                            </h5>
+                                            <h6>
+                                                Ertaç
+                                            </h6>
+                                        </div>
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                    </div>
+                                    <p>
+
+                                        Elbette, işte bir ahşap sitesine yazabileceğiniz güzel bir yorum örneği:
+
+                                        Ahşap işçiliğine ve doğal malzemelere olan tutkunuzun bir yansıması olan bu siteye hayran kaldım! Ürünlerinizin her biri zarif tasarımları ve kaliteli işçilikleri ile öne çıkıyor. Ahşap dokusunun doğallığı ve sıcaklığı, mekanlara benzersiz bir hava katıyor. Sitenizden alışveriş yapmak gerçek bir zevk, çünkü her detay büyük bir özenle düşünülmüş. Müşteri memnuniyetine verdiğiniz önemi hissettirmek adına sunduğunuz detaylı ürün açıklamaları ve görseller, alışveriş deneyimini daha da keyifli hale getiriyor. Doğal ve estetik yaşam alanları oluşturmak isteyen herkese bu siteyi gönül rahatlığıyla tavsiye ederim. Harika işlerinize devam edin!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#customCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel2" data-slide-to="1"></li>
+            <li data-target="#customCarousel2" data-slide-to="2"></li>
+        </ol>
+    </div>
+</section>
+<section class="why_us_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+
+                Neden Bizi Seçmelisiniz?
+            </h2>
+        </div>
+        <div class="why_us_container">
+            <div class="box">
+                <div class="img-box">
+                    <img src="~/images/w1.png" alt="">
+                </div>
+                <div class="detail-box">
+                    <h5>
+                        Proje zamanında TESLİM
+                    </h5>
+                    <p>
+                        Bizimle çalıştığınızda, projelerinizin zamanında ve eksiksiz teslim edileceğinden emin olabilirsiniz. Müşteri memnuniyeti bizim için en önemli önceliktir ve taahhüt ettiğimiz tarihlerde teslimat yaparak güveninizi kazanıyoruz.
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-box">
+                    <img src="~/images/w2.png" alt="">
+                </div>
+                <div class="detail-box">
+                    <h5>
+
+                        Her zaman müsait
+                    </h5>
+                    <p>
+                        Müşteri memnuniyetini en üst düzeyde tutmak için her zaman yanınızdayız. İhtiyaç duyduğunuz her an bize ulaşabilir ve hızlı çözümler bulabilirsiniz. Esnek çalışma saatlerimiz ve ulaşılabilir ekibimiz ile projelerinizin her aşamasında sizinle birlikteyiz.
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img-box">
+                    <img src="~/images/w3.png" alt="">
+                </div>
+                <div class="detail-box">
+                    <h5>
+                        Profesyonel ve sorumlu
+                    </h5>
+                    <p>
+                        Bizimle çalıştığınızda, projelerinizin her aşamasında profesyonel ve sorumlu bir ekiple işbirliği yapmanın rahatlığını yaşarsınız. İş ahlakımız ve profesyonellik anlayışımız sayesinde, işlerimizi titizlikle ve özenle yürütüyoruz. Taahhütlerimize sadık kalır, projelerinizi en yüksek kalite standartlarında tamamlarız.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact_section layout_padding-bottom">
+    <div class="container-fluid">
+        <div class="col-lg-4 col-md-5 offset-md-1">
+            <div class="heading_container">
+                <h2>
+                    BİZE ULAŞIN
+                </h2>
+            </div>
+        </div>
+        @using (Html.BeginForm("SendContact", "Home", FormMethod.Post))
+        {
+            <div class="row">
+                <div class="col-lg-4 col-md-5 offset-md-1">
+                    <div class="form_container">
+
+                        <div>
+                            <input id="isim" name="isim" type="text" placeholder="İsim Soyisim" />
+                        </div>
+                        <div>
+                            <input id="telefon" name="telefon" type="text" placeholder="Telefon Numara" />
+                        </div>
+                        <div>
+                            <input id="email" name="email" type="email" placeholder="Email" />
+                        </div>
+                        <div>
+                            <input id="mesaj" name="mesaj" type="text" class="message-box" placeholder="Messaj" />
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Gönder
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-6 px-0">
+                    <div class="map_container">
+                        <div class="map">
+                            <div id="googleMap">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95929.57580664019!2d36.3136985!3d41.2914735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x408877e97607d663%3A0xb939cc265fdeb52!2sSamsun!5e0!3m2!1str!2str!4v1709218338716!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</section>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Gönderildi..
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+            </div>
+        </div>
+    </div>
+</div>

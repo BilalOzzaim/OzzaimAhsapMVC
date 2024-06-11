@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <form asp-action="Register" asp-controller="Auth" method="post">
+        <input type="email" name="email" placeholder="Email"/>
+        <br />
+        <input type="text" name="firstName" placeholder="İsminiz" />
+        <br />
+        <input type="text" name="lastName" placeholder="Soyisimiz" />
+        <br />
+        <input type="password" name="password" placeholder="password" />
+        <br />
+        <button type="submit">
+            Kayıt
+        </button>
+    </form>
+</body>
+</html>
